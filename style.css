@@ -1,0 +1,262 @@
+*{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+p{
+    color: aqua;
+}
+.logo{
+    color: aqua;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    float: left;
+    width: 20%;
+    cursor: pointer;
+}
+nav div p{
+    font-size: 50px;
+}
+.nav{
+    float: right;
+    width: 50%;
+    justify-items: flex-end;
+}
+.nav_link{
+    /* float: right;
+    text-align: right; */
+    display: inline;
+    padding: 20px;
+}
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+/* CONTENT */
+.content .top_content .center_p{
+    text-align: center;
+    padding: 0;
+    font-size: 35px;
+    color: aqua;
+}
+.center_p {
+    text-align: center;
+    padding: 0;
+}
+.CarPic{
+    /* width: 600px;
+    height: 350px; */
+    width: 100%;
+    height: 100%;
+}
+.middle_content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* grid-template-columns: auto auto; */
+}
+.left_content{
+    float: left;
+    width: 50%;
+    padding: 15px;
+}
+.right_content{
+    float: right;
+    width: 50%;
+    padding: 15px;
+}
+.right_content h5{
+    margin-top: 7.5px;
+    text-indent: 25px;
+    text-align: justify;
+    padding: 3.5px;
+    font-size: 16px;
+}
+.giveaway{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* TIMER COUNTDOWN */
+.counter{
+    display: flex;
+    justify-content: center;
+}
+.counter_body1{
+    background-color: aqua;
+    border-radius: 3px;
+    margin: 15px;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: large;
+}
+.counter_body2 {
+    background-color: aqua;
+    color: black;   
+    margin: 15px;
+    font-size: larger;
+}
+.counter_body3 {
+    background-color: aqua;
+    color: black;
+    margin: 15px;
+}
+/* FOOTER */
+.top{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+.btn{
+    color: black;
+    border-radius: 5px;
+    padding: 7px;
+    border: none;
+    background-color: aqua;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.btn:hover{
+    border: none;
+    background-color: black;
+    color: aqua;
+    text-decoration: underline;
+}
+.footer .top p{
+    font-size: 25px;
+    padding-bottom: 0px;
+}
+.footer .top h4{
+    padding: 2px;
+    margin-top: 3px;
+
+}
+.middle{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.middle1{
+    width: 25%;
+    list-style: none;
+}
+.middleHead{
+    color: aqua;
+    margin-bottom: 6.5px;
+    font-size: 20px;
+    cursor: text;
+} 
+li{
+    padding: 3px;
+    cursor: pointer;
+}
+
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+}
+.messenger {
+    color: blue;
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin: 3.5px;
+}
+
+.facebook {
+    background-color: white;
+    border-radius: 20px;
+    color: rgb(25, 0, 255);
+    cursor: pointer;
+    margin: 3.5px;
+}
+
+.twitter {
+    color: aqua;
+    cursor: pointer;
+    margin: 3.5px;
+}
+
+.whatsapp {
+    color: white;
+    background-color: springgreen;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 3.5px;
+}
+
+.telegram {
+    color: rgb(0, 68, 255);
+    /* background-color: white; */
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 1.5px;
+}
+.policy{
+    float: right;
+    color: aqua;
+}
+
+@media screen and (max-width: 900px) {
+    .middle_content {
+        display: block;
+    }
+    .left_content{
+        width: 100%;
+        display: block;
+    }
+    .right_content{
+        width: 100%;
+        display: block;
+    }
+    header{
+        display: flex;
+        width: 100%;
+    }
+    .logo{
+        display: inline-block;
+        width: 21.5%;
+        /* padding: 0px; */
+        padding-left: 8px;
+    }
+    .nav{
+        display: inline-block;
+        width: 80%;
+        /* margin: 0px; */
+    }
+    .nav_link{
+        display: inline;
+        padding: 10px;
+    }
+    .center_p{
+        margin: 0px;
+    }
+    .socials{
+        display: block;
+    }
+    .middle{
+        display: block;
+        text-align: center;
+    }
+    .middle1{
+        width: 100%;
+        list-style: none;
+    }
+    .counter {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
