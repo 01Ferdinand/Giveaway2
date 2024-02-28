@@ -9,31 +9,34 @@
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
+    padding: 10px;
 }
 p{
     color: aqua;
 }
 .logo{
+    display: flex;
     color: aqua;
-    padding-left: 30px;
-    padding-bottom: 20px;
-    float: left;
-    width: 20%;
     cursor: pointer;
+    align-items: center;
+}
+.logo p{
+    margin-right: 10px;
+}
+.logo img{
+    height: 50px;
+    width: auto;
 }
 nav div p{
     font-size: 50px;
 }
 .nav{
-    float: right;
-    width: 50%;
-    justify-items: flex-end;
+    list-style: none;
+    display: flex;
 }
 .nav_link{
-    /* float: right;
-    text-align: right; */
-    display: inline;
     padding: 20px;
 }
 a {
@@ -80,8 +83,8 @@ a:hover {
 }
 .right_content h5{
     margin-top: 7.5px;
-    text-indent: 25px;
-    text-align: justify;
+    /* text-indent: 25px; */
+    text-align: left;
     padding: 3.5px;
     font-size: 16px;
 }
@@ -112,6 +115,7 @@ a:hover {
     color: black;
     margin: 15px;
 }
+
 /* FOOTER */
 .top{
     text-align: center;
@@ -210,6 +214,9 @@ li{
 }
 
 @media screen and (max-width: 900px) {
+    body{
+        font-size: small;
+    }
     .middle_content {
         display: block;
     }
@@ -226,14 +233,16 @@ li{
         width: 100%;
     }
     .logo{
-        display: inline-block;
+        display: flex;
         width: 21.5%;
         /* padding: 0px; */
         padding-left: 8px;
     }
     .nav{
-        display: inline-block;
-        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        /* display: inline-block;
+        width: 80%; */
         /* margin: 0px; */
     }
     .nav_link{
@@ -259,4 +268,8 @@ li{
         justify-content: center;
         width: 100%;
     }
+    .counter_body1 {
+        margin: 7.5px;  
+    }
+    
 }
